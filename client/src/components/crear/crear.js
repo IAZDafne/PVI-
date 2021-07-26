@@ -12,7 +12,8 @@ function CreateGame() {
         released: '',
         rating: 0,
         genres: [],
-        platforms: ''
+        platforms: '',
+        background_image:''
     });
 
     const handleChange = e => {
@@ -124,6 +125,19 @@ function CreateGame() {
                         <br />
                         <input name='rating'  placeholder=' 1 to 5' type="number" id="rating" min= '1' max='5' maxLength='1' />
                         <br />
+                        <label>Imagen del juego</label>
+                        <input className={`${errors.background_image && 'danger'}`}
+                                 placeholder='Ingrese  una imagen'
+                                 type='text'
+                                 name='background_image'
+                                 value={form.background_image}
+                                onChange={handleChange} />
+                                 {errors.background_image && (<p className="danger">{errors.background_image}</p>)}
+                                 {(form.background_image && !errors.background_image) &&
+                        <div className='videogame-imagen' >
+                     <img src={form.background_image} alt='Imagen no encontrada' width='100%' id='background_image' />
+                    </div>
+        }
                         </div>
                         <div id='genres'  className='generos'>
                             <label >Generos </label>

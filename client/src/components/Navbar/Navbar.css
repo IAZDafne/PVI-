@@ -24,7 +24,7 @@
     background-color:white;
     background-position-x: right;
     background-repeat: no-repeat;
-    text-align: center;
+    text-align: center; 
     border-radius: 13px;
     box-shadow: black 1px 1px 1px 1px;
     font: 14px "Comic Sans MS", cursive, sans-serif;
@@ -32,6 +32,7 @@
     display:inline-block;
     margin-top:15px ;
 }
+
 .botongueradar{
     border-radius: 7px;
     box-shadow: black 1px;
