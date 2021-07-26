@@ -1,0 +1,46 @@
+.detalle{
+    margin-left: 400px;
+    width:650px;
+    height: 1000px;
+    background-color:transparent;
+    border-radius: 15px;
+}
+.img-dettalle{
+    margin-left:200px ;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+.titulo-detalle{
+    margin-top:55px ;
+    color: #bff19c;
+    text-shadow: 0 0 15px #000, 0 0 10px #000, 
+    0 0 8px #000, 0 0 10px #000, 0 0 20px #000,
+     0 0 15px #000, 0 0 7px #000, 0 0 10px #000;
+    font: 18px "Comic Sans MS", cursive, sans-serif;
+    margin-left:220px ;
+
+}
+.descripcion-detalle{
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    text-align: justify;
+    color:whitesmoke;
+    text-shadow: 1px 1px 1px 1px black  ;
+}
+.demas{
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color:whitesmoke;
+}
+.todo-detalle{
+background-image: url('./back3.jpg');
+background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
+
+}

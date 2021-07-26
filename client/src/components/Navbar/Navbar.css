@@ -1,0 +1,51 @@
+.barra{
+   
+    align-items: center;
+    margin: 15px;
+    
+}
+.yao-logo{
+    align-items: center;
+}
+.logo{
+    margin-left: 500px;
+    position:inherit;
+    font: normal 50px/1 "Comic Sans MS", cursive, sans-serif;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0 0 20px #d43f3a, 0 0 14px #d43f3a, 
+    0 0 16px #d43f3a, 0 0 18px #d43f3a, 0 0 50px #d43f3a,
+     0 0 30px #d43f3a, 0 0 13px #d43f3a, 0 0 15px #d43a3a;
+     text-decoration: none;
+}
+.inputBuscar{
+    background-image: url('../../imagenes/lupa.svg');
+    background-color:white;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: black 1px 1px 1px 1px;
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    align-items:unset;
+    display:inline-block;
+    margin-top:15px ;
+}
+.botongueradar{
+    border-radius: 7px;
+    box-shadow: black 1px;
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    
+}
+.botongueradar:hover{
+    background-color: black;
+    color:white;
+}
+
+.form{
+    margin-left: 525px;
+    margin-top: 50px;
+
+  
+}

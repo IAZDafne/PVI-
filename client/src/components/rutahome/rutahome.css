@@ -1,0 +1,31 @@
+.todo-crear{
+    display: inline-grid;
+    margin-left: 50px;
+}
+.todo-home{
+    display: inline-grid;
+    margin-left:1050px;
+}
+.nav-links:hover{
+    text-shadow: 0 0 20px #c1f31c, 0 0 14px #c1f31c, 
+    0 0 16px #c1f31c, 0 0 18px #c1f31c, 0 0 50px #c1f31c,
+     0 0 30px #c1f31c, 0 0 13px #c1f31c, 0 0 15px #c1f31c;
+}
+
+.rutasnavbar{
+    padding: 0;
+    display:fixed;
+    justify-content: space-around;
+}
+.nav-item{
+    list-style-type: none;
+    display:inline-grid;
+}
+.nav-links{
+    text-decoration: none;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    text-shadow: 0 0 20px #25f5b7, 0 0 14px #25f5b7, 
+    0 0 16px #25f5b7, 0 0 18px #25f5b7, 0 0 50px #25f5b7,
+     0 0 30px #25f5b7, 0 0 13px #25f5b7, 0 0 15px #25f5b7;
+     color:white;
+}

@@ -1,0 +1,86 @@
+
+
+.crad{
+    padding: 15px; 
+    font: normal 16px/1 "Comic Sans MS", cursive, sans-serif;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 17rem;
+    position: relative;
+    display: flex;
+    direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    
+}
+.titulo{
+    color: #bff19c;
+    text-shadow: 0 0 15px #000, 0 0 10px #000, 
+    0 0 8px #000, 0 0 10px #000, 0 0 20px #000,
+     0 0 15px #000, 0 0 7px #000, 0 0 10px #000;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+}
+.link{
+    text-decoration: none;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    
+    perspective: 1000px; 
+    align-items: center;
+    }
+    /* Este contenedor es necesario para colocar el anverso y el reverso */
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+    /* Hace un giro horizontal cuando muevas el ratón sobre el contenedor de la caja */
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    }
+    /* Coloca el anverso y el reverso */
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    }
+    /* Estilos de la parte trasera (alternativa por si falta la imagen) */
+    .flip-card-front {
+    
+    color: black;
+    }
+    /* Estilos de la parte trasera */
+    .flip-card-back {
+    
+    color: white;
+    transform: rotateY(180deg);
+    width: 100px;
+    height: 80px;
+}
+    .img{
+        width: 200px;
+        height: 180px;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .estrella{
+        width: 17px;
+        height: 17px; 
+        background-image: url('./estrella.png');
+        align-items: center;
+        margin-left: 40px;
+    
+    }

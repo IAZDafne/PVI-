@@ -1,0 +1,16 @@
+.games{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home{
+   
+    background-image:url('./back9.jpg');
+    background-repeat: no-repeat;
+    height: 2900px;
+    width: 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
+    position:absolute;
+}

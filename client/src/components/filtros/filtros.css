@@ -1,0 +1,47 @@
+.todosfiltros{
+    margin-left: 500px;
+}
+
+
+.filtroGeneros{
+    color: blanchedalmond;
+    text-shadow: 0 0 15px #000, 0 0 10px #000, 
+    0 0 8px #000, 0 0 10px #000, 0 0 20px #000,
+     0 0 15px #000, 0 0 7px #000, 0 0 10px #000;
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    display: inline-grid;
+}
+.selectGeneros{
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    display: inline-grid;
+}
+
+.filtroAlfabeto{
+    color: blanchedalmond;
+    text-shadow: 0 0 15px #000, 0 0 10px #000, 
+    0 0 8px #000, 0 0 10px #000, 0 0 20px #000,
+     0 0 15px #000, 0 0 7px #000, 0 0 10px #000;
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    display: inline-grid;
+   
+}
+
+.selectAlfabeto{
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    display: inline-grid;
+
+    
+}
+.filtroRaiting{
+    color: blanchedalmond;
+    text-shadow: 0 0 15px #000, 0 0 10px #000, 
+    0 0 8px #000, 0 0 10px #000, 0 0 20px #000,
+     0 0 15px #000, 0 0 7px #000, 0 0 10px #000;
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    display: inline-grid;
+  
+}
+.selectRaitng{
+    font: 14px "Comic Sans MS", cursive, sans-serif;
+    display: inline-grid;
+}
