@@ -9,7 +9,6 @@ function Navbar() {
     const dispatch = useDispatch();
     const [input, setInput] = useState('')
     const handleInput = (e) => {
-        // dispatch(filterByName(e.target.value))
         setInput(e.target.value)
     }
     const handleSearch = (e) => {
@@ -31,7 +30,8 @@ function Navbar() {
                     
             
                     <form className='form' >
-                        <input onChange={handleInput} value= {input} type="text" placeholder='VIDEOJUEGO' spellCheck='false' className='inputBuscar' />
+                        <input onChange={handleInput} value= {input} type="text" placeholder='VIDEOJUEGO' 
+                        spellCheck='false' className='inputBuscar' />
                         <button className='botongueradar'onClick={handleSearch}>BUSCAR</button>
                     </form>  
               

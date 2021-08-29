@@ -45,7 +45,8 @@ const genres = require('../routes/genres.js')
                 pages++;
                 response.data.results = response.data.results.reduce((acc, el) => acc.concat({
                     ...el,
-                    genres: el.genres.map(g => g.name)
+                    genres: el.genres.map(g => g.name),
+                   
                 }), [])
                 results = [...results, ...response.data.results]
                 response = await axios.get(response.data.next)
@@ -57,51 +58,7 @@ const genres = require('../routes/genres.js')
         }
     }
 })
-router.get('/idVideogame', async (req, res) => {
-    let videogamesDb = await Videogame.findAll({
-        include: Genre
-    });
-    //Parseamos el objeto recibido de findAll porque es una referencia circular (?)
-    videogamesDb = JSON.stringify(videogamesDb);
-    videogamesDb = JSON.parse(videogamesDb);
-    //Aca dejamos el arreglo de generos plano con solo los nombres de cada genero
-    videogamesDb = videogamesDb.reduce((acc, el) => acc.concat({
-        ...el,
-        genres: el.genres.map(g => g.name)
-    }), [])
-    const { idVideogame } = req.params
-    if (idVideogame.includes('-')) {
-        let videogameDb = await Videogame.findOne({
-            where: {
-                id: idVideogame,
-            },
-            include: Genre
-        })
-        videogameDb = JSON.stringify(videogameDb);
-        videogameDb = JSON.parse(videogameDb);
-        videogameDb.genres = videogameDb.genres.map(g => g.name);
-        res.json(videogameDb)
-    };
 
-    try {
-        const response = await axios.get(`https://api.rawg.io/api/games/${idVideogame}?key=${API_KEY}`);
-        console.log(response)
-        let { name, background_image, genres, description, released, rating, platforms } = response.data;
-        genres = genres.map(g => g.name);
-        platforms = platforms.map(p => p.platform.name);
-        return res.json({
-            name,
-            background_image,
-            genres,
-            description,
-            released,
-            rating,
-            platforms
-        })
-    } catch (err) {
-        return console.log(err)
-    }
-})
 
 
 

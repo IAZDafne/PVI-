@@ -1,6 +1,6 @@
   
-require('dotenv').config();
-const { API_KEY } = process.env;
+require('dotenv').config(); // para lo datos sencibles 
+const { API_KEY } = process.env; // es el api generado en la pagina 
 const { Router } = require('express');
 const router = Router();
 const axios = require('axios').default;

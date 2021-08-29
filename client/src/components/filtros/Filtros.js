@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { filterByGenres, sortByAlphabet, sortByRating } from '../../actions/index';
+import {  filterDB,filterByGenres, sortByAlphabet, sortByRating } from '../../actions/index';
 import './filtros.css'
 
 
@@ -16,6 +16,8 @@ function Filters() {
     const handleRating = (e) => {
         dispatch(sortByRating(e.target.value));
     }
+    const handleBD = (e) => {
+       dispatch(filterDB(e.target.value)) }
     return (
         <div className='todosfiltros'>
             <div className='filtroGeneros'>
@@ -58,12 +60,17 @@ function Filters() {
             <div className='filtroRaiting' >
                 <label htmlFor="orderRating">
                     <span >RAITING </span>
+    
                 </label>
                 <select id="orderRating" onChange={handleRating} className='selectRaitng' >
                     <option value="">Default</option>
                     <option value="high">Highest Rated ★</option>
                     <option value="less">Less Rated ☆</option>
                 </select>
+                <button className= "botonbd" value="status" onClick={handleBD}>JuegosCreados</button>
+                  
+                
+
             </div>
             
         </div>

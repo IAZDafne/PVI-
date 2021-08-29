@@ -8,7 +8,7 @@ const { Videogame, Genre } = require('../db');
 
 //POST a /videogame
 router.post('/', async (req, res) => {
-    let { name, description, released, rating, genres, platforms, background_image } = req.body;
+    let { name, description, released, rating, genres, platforms, background_image,status} = req.body;
     let genreDt = genres.map(gen => {
         return Genre.findOrCreate({
             where:{
@@ -27,6 +27,7 @@ let videogame = await Videogame.create({
     rating,
     platforms,
     background_image,
+    status:"created",
     
             
     })
